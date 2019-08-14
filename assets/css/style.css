@@ -1,7 +1,6 @@
-body {
-    background-image: url("paper.gif"); 
-    background-color: #cccccc;
-    background-repeat: repeat;
+body { /*page background*/
+    background: linear-gradient(brown, gold);
+    background-repeat: no-repeat;
 }
 #h3 { /*styling the title of the page*/
     text-align: center;
@@ -9,11 +8,15 @@ body {
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 35px;
+    background-color: olivedrab;
 }
-#h4 { /*styling the title of the page*/
+#h4 { /*styling the game instructions*/
     text-align: left;
     font-family:"Lucida Console", Monaco, monospace;
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 35px;
+}
+#crystals{
+
 }
