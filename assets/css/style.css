@@ -16,24 +16,30 @@ body { /*page background*/
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 35px;
+    color: whitesmoke;
 }
 /* #crystals{
 
 } */
+/* content width/height of crystals images */
 #blue{
-    width:230px;
-    height:260px;
+    width:140px;
+    height:150px;
+    float:right;
     
 }
 #gold{
-    width:200px;
-    height:300px;
+    width:140px;
+    height:150px;
+    float:right;
 }
 #purple{
-    width:200px;
-    height:300px;
+    width:140px;
+    height:150px;
+    float:right;
 }
 #green{
-    width:200px;
-    height:300px;
+    width:140px;
+    height:150px;
+    float:right;
 }
