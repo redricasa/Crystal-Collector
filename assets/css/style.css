@@ -17,6 +17,23 @@ body { /*page background*/
     margin-top: 50px;
     margin-bottom: 35px;
 }
-#crystals{
+/* #crystals{
 
+} */
+#blue{
+    width:230px;
+    height:260px;
+    
+}
+#gold{
+    width:200px;
+    height:300px;
+}
+#purple{
+    width:200px;
+    height:300px;
+}
+#green{
+    width:200px;
+    height:300px;
 }
