@@ -29,15 +29,16 @@ When you get the exact number- you get a score, and when you go over the goal- y
     - win = wins++
     - lose = losses++
 
-
+<> random number generator:
+    - b/n 1 - 12 : 0 is inclusive therefore, find a syntax that makes 0 not inclusive
 <> create functions to allow for actions to be taken over and over:
     - when (wins++/losses++) = reset game
         > when win = wins++
         > when lose = losses++
+        > call reset function
     - wins++ when Accumulated === goal
     - random goal 
-        > when win = wins++
-        > when lose = losses++
+        > Math.floor(Math.random() )
         > call reset function
     - random blue crystal
     - random purple crystal
@@ -49,6 +50,8 @@ When you get the exact number- you get a score, and when you go over the goal- y
         > call random purple crystal
         > call random green crystal
         > call random gold crystal
+        > call goal
+
 
 
 

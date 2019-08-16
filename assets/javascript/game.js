@@ -10,6 +10,23 @@ var goalGenerator = function (max, min){
     return (Math.floor(Math.random() * (max - min + 1))+ min);
 };
 console.log (goalGenerator() + " goal");
+var win= win++;
+var loss= loss++;
+var accumulated=0;
+var blue = function blue (){};
+$("#blue").click(crystalGenerator){
+    console.log(crystalGenerator()+"blue");
+}
+
+$("#gold").click(crystalGenerator);
+console.log(crystalGenerator()+"gold");
+$("#green").click(crystalGenerator);
+console.log(crystalGenerator()+"green");
+$("#purple").click(crystalGenerator);
+console.log(crystalGenerator()+"purple");
+
+
+
 
 
 
