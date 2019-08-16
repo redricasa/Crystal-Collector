@@ -1,5 +1,5 @@
 //random number generator function for crystals - min of 1 and max of 12 add 1 to start the count from 1 instead of the inclusive number 0
-$(document).ready(){
+// $(document).ready(){
     var crystalGenerator = function (){
         return console.log(Math.floor(Math.random()* 13) + 1);
     }    
@@ -15,13 +15,15 @@ $(document).ready(){
     var loss= loss++;
     var accumulated=0;
     var blue = function blue (){};
+$(document).ready(function(){
     $("#gold").click(crystalGenerator);
     
     $("#green").click(crystalGenerator);
     console.log(crystalGenerator()+"green");
     $("#purple").click(crystalGenerator);
     console.log(crystalGenerator()+"purple");
-};
+});
+// };
 
 
 
