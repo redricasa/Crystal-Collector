@@ -1,5 +1,5 @@
 //random number generator function for crystals - min of 1 and max of 12 add 1 to start the count from 1 instead of the inclusive number 0
-// $(document).ready(){
+$(document).ready(function(){
     var crystalGenerator = function (){
         return console.log(Math.floor(Math.random()* 13) + 1);
     }    
@@ -10,20 +10,40 @@
         var min = 19;
         return (Math.floor(Math.random() * (max - min + 1))+ min);
     };
+    var accumulated = function(){
+        
+    }
     console.log (goalGenerator() + " goal");
     var win= win++;
     var loss= loss++;
     var accumulated=0;
     var blue = function blue (){};
-$(document).ready(function(){
+
     $("#gold").click(crystalGenerator);
-    
+    console.log(crystalGenerator()+" gold");
     $("#green").click(crystalGenerator);
-    console.log(crystalGenerator()+"green");
+    console.log(crystalGenerator()+" green");
     $("#purple").click(crystalGenerator);
-    console.log(crystalGenerator()+"purple");
+    console.log(crystalGenerator()+" purple");
+    $("#blue").click(crystalGenerator);
+    console.log(crystalGenerator()+" blue");
+
+    if (accumulated===goalGenerator()){
+        $("#win").text(win++);
+    }
+    else if (accumulated> goalGenerator()){
+        $("#loss").text(loss++);
+    }
+    else{
+        console.log("keep playing...");
+    }
+    var resetGame = function(){
+        accumulated===goalGenerator();
+
+    }
+
 });
-// };
+
 
 
 
