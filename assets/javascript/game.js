@@ -9,9 +9,7 @@ $(document).ready(function(){
     };
     const max = 120;
     const min = 19;
-    var goalval = goalGenerator(max, min);
-    $("#random-goal").text(goalval);
-    console.log (goalval + " goal");
+    var goalval = 0;
     var win= 0;
     var loss= 0;
     var accumulated=0;
@@ -24,57 +22,49 @@ $(document).ready(function(){
         console.log("the extracted value is "+ val );
         console.log("the accumulated amount is " + accumulated);
         $("#accumulated").text(accumulated);
+        
         if (accumulated===goalval){
+            $("#status").html("<p>You won!!</p>");
             $("#win").text(++win);
+            reset();
         }
         else if (accumulated > goalval){
+            $("#status").html("<p>You lost!</p>");
             $("#loss").text(++loss);
+            reset();
         }
         else{
+            $("#status").html("<p>keep playing..</p>");
             console.log("keep playing")
         }
     };
 
     $(".crystal").click(crystalEventHandler);
 
-    var goldval = crystalGenerator();
-    $("#gold").attr('samri', goldval);//to link the crystalGnerator # to #gold
-    console.log(goldval+" gold");
-
-    var greenval = crystalGenerator();
-    $("#green").attr('samri', greenval);
-    console.log(greenval+" green");
-
-    var purpleval= crystalGenerator();
-    $("#purple").attr('samri', purpleval);
-    console.log(purpleval+" purple");
-
-    var blueval = crystalGenerator();
-    $("#blue").attr('samri', blueval);
-    console.log(blueval+" blue");
-
+    var reset = function(){
+        goalval = goalGenerator(max, min);
+        $("#random-goal").text(goalval);
+        accumulated=0;
+        var goldval = crystalGenerator();
+        $("#gold").attr('samri', goldval);//to link the crystalGnerator # to #gold
+        console.log(goldval+" gold");
     
+        var greenval = crystalGenerator();
+        $("#green").attr('samri', greenval);
+        console.log(greenval+" green");
     
-    // var status=function(){
-    //     if(){
-    //         $("#status").html("<p>You won!!</p>");
-    //     };
-    //     else{
-    //         $("#status").html("<p>You lost!</p>");
-    //     };        
-    // };
-    // else if (accumulated> goalGenerator()){
-    //     $("#loss").html(loss++);
-    // };
-    // else{
-    //     console.log("keep adding...");// addition function
-    // };
-    // var resetGame = function(){
-    //     accumulated===goalGenerator();
-    // };
-    $("#status").text(status); 
-    $("#accumulated").text(accumulated);
-
+        var purpleval= crystalGenerator();
+        $("#purple").attr('samri', purpleval);
+        console.log(purpleval+" purple");
+    
+        var blueval = crystalGenerator();
+        $("#blue").attr('samri', blueval);
+        console.log(blueval+" blue");
+    
+        $("#status").html("<p>A new game!</p>"); 
+        $("#accumulated").text(accumulated);
+    }
+    reset();
 });
 
 
