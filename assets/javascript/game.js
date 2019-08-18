@@ -1,5 +1,6 @@
 //random number generator function for crystals - min of 1 and max of 12 add 1 to start the count from 1 instead of the inclusive number 0
 $(document).ready(function(){
+    
     var crystalGenerator = function (){
         return (Math.floor(Math.random()* 13) + 1);
     };    
@@ -9,9 +10,12 @@ $(document).ready(function(){
     };
     const max = 120;
     const min = 19;
-    var goalval = 0;
+    //not setting this here as we'll set it in the reset function below 
+    var goalval; 
     var win= 0;
     var loss= 0;
+    $("#win").text(win);
+    $("#loss").text(loss);
     var accumulated=0;
     // var blue = function blue (){};
     var crystalEventHandler = function (eventObject){
