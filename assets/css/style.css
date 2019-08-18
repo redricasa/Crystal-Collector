@@ -1,6 +1,7 @@
 body { /*page background*/
     background: linear-gradient(brown, gold);
     background-repeat: no-repeat;
+    margin-left: 20px;
 }
 #h3 { /*styling the title of the page*/
     text-align: center;
@@ -55,12 +56,12 @@ body { /*page background*/
 #win{
     width:100px;
     height:30px;
-    /* float:left; */
+    margin-left:10px;
 }
 #loss{
     width:100px;
     height:30px;
-    /* float:left; */
+    margin-left:10px;
 }
 #random-goal{ /*randomely generated amount*/
     width:140px;
