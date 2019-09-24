@@ -54,6 +54,6 @@ When you get the exact number- you get a score, and when you go over the goal- y
         >> call random gold crystal
         >> call goal
 
-
+## Link to Github page : https://redricasa.github.io/Crystal-Collector/
 
 
